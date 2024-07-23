@@ -1,20 +1,20 @@
 {
-  "name": "@textlint-ja/textlint-rule-no-synonyms",
-  "version": "1.3.0",
-  "description": "同義語を表記ゆれをチェックするtextlintルール",
+  "name": "textlint-rule-no-synonyms-resola",
+  "version": "1.0.0",
+  "description": "fork from textlint-ja/textlint-rule-no-synonyms",
   "keywords": [
     "textlintrule"
   ],
-  "homepage": "https://github.com/textlint-ja/textlint-rule-no-synonyms/tree/master/",
+  "homepage": "https://github.com/chris-resola/textlint-rule-no-synonyms#readme",
   "bugs": {
-    "url": "https://github.com/textlint-ja/textlint-rule-no-synonyms/issues"
+    "url": "https://github.com/chris-resola/textlint-rule-no-synonyms/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/textlint-ja/textlint-rule-no-synonyms.git"
+    "url": "git+https://github.com/chris-resola/textlint-rule-no-synonyms.git"
   },
   "license": "MIT",
-  "author": "azu",
+  "author": "Chris Lerus <c.michel@resola.ai> (https://github.com/chris-resola)",
   "files": [
     "bin/",
     "lib/",
