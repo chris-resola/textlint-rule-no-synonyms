@@ -5,6 +5,7 @@ import { wrapReportHandler } from "textlint-rule-helper";
 
 const TinySegmenter = require("tiny-segmenter");
 const segmenter = new TinySegmenter(); // インスタンス生成
+import { v4 as uuidv4 } from "uuid";
 
 export interface Options {
     /**
@@ -130,10 +131,11 @@ const report: TextlintRuleReporter<Options> = (context, options = {}) => {
                             }
                         } else if (items.length >= 2) {
                             const midashiList = items.map((item) => item.midashi);
+                            const uuid = uuidv4();
                             for (const item of items) {
                                 const index = locationMap.get(item)?.index ?? 0;
                                 const deniedWord = item.midashi;
-                                const message = `同義語である「${midashiList.join("」と「")}」が利用されています`;
+                                const message = uuid;
                                 report(
                                     node,
                                     new RuleError(message, {
